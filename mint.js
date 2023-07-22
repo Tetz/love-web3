@@ -67,7 +67,7 @@ async function mintERC1155(index, name, amount) {
         console.log("Block Number:", (await receipt).blockNumber);
         console.log(
           "\nTo see your transaction, navigate to:\nhttps://mumbai.polygonscan.com/tx/" +
-            (await signedTxn).hash
+            (await signedTxn).hash + "\n"
         );
       } else {
         console.log("Error submitting transaction");
